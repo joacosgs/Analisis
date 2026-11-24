@@ -1,0 +1,13 @@
+﻿Variable,Tipo_Dato,Valores_Nulos,Porcentaje_Nulos,Valores_Unicos
+ID_Transaccion,str,0,0.0,2000
+Fecha,str,0,0.0,469
+ID_Cliente,str,0,0.0,661
+Categoria,str,80,3.92,5
+Producto,str,0,0.0,25
+Precio_Unitario,str,0,0.0,1928
+Cantidad,int64,0,0.0,6
+Descuento_Pct,float64,100,4.9,5
+Monto_Total_USD,float64,0,0.0,1956
+Metodo_Pago,str,0,0.0,4
+Canal_Venta,str,0,0.0,3
+Estado_Pedido,str,0,0.0,4
