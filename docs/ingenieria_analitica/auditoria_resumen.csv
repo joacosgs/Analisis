@@ -1,0 +1,46 @@
+﻿Metrica,Valor,Detalle
+Filas originales,2040,Fuente original
+Columnas originales,12,
+Duplicados por ID eliminados,40,Deduplicación por clave primaria
+Filas finales,2000,
+IDs únicos finales,2000,
+Categorías faltantes iniciales,80,
+Categorías imputadas,80,Mapeo producto-categoría observado
+Categorías nulas finales,0,
+Descuentos faltantes iniciales,100,
+Descuentos imputados,100,Solo cuando fórmula respalda 0
+Descuentos nulos finales,0,
+Fechas inválidas finales,0,
+Cantidades negativas iniciales,27,
+Cantidades negativas finales,26,Conservadas y señalizadas
+Montos inconsistentes,0,Tolerancia 0.01 USD
+Nulos totales finales,0,
+Nulos finales — ID_Transaccion,0,string
+Nulos finales — Fecha,0,object
+Nulos finales — ID_Cliente,0,string
+Nulos finales — Categoria,0,string
+Nulos finales — Producto,0,string
+Nulos finales — Precio_Unitario,0,Float64
+Nulos finales — Cantidad,0,int64
+Nulos finales — Descuento_Pct,0,float64
+Nulos finales — Monto_Total_USD,0,float64
+Nulos finales — Metodo_Pago,0,string
+Nulos finales — Canal_Venta,0,string
+Nulos finales — Estado_Pedido,0,string
+Nulos finales — Categoria_Imputada,0,bool
+Nulos finales — Descuento_Imputado,0,bool
+Nulos finales — Diferencia_Monto_Calculado_USD,0,Float64
+Nulos finales — Monto_Consistente,0,bool
+Nulos finales — Cantidad_Negativa,0,bool
+Nulos finales — Outlier_IQR_Precio,0,boolean
+Nulos finales — Outlier_ZScore_Precio,0,boolean
+Nulos finales — Outlier_IQR_Cantidad,0,bool
+Nulos finales — Outlier_ZScore_Cantidad,0,bool
+Nulos finales — Outlier_IQR_Monto,0,bool
+Nulos finales — Outlier_ZScore_Monto,0,bool
+Outliers IQR — Precio,48,"Marcados, no eliminados; 1.5*IQR"
+Outliers Z-score — Precio,0,"Marcados, no eliminados; |z|>3"
+Outliers IQR — Cantidad,151,"Marcados, no eliminados; 1.5*IQR"
+Outliers Z-score — Cantidad,37,"Marcados, no eliminados; |z|>3"
+Outliers IQR — Monto,128,"Marcados, no eliminados; 1.5*IQR"
+Outliers Z-score — Monto,46,"Marcados, no eliminados; |z|>3"
