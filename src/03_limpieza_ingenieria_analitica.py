@@ -24,7 +24,9 @@ def main():
         if df[c].dtype=="object" or str(df[c].dtype).startswith("string"):
             df[c]=df[c].astype("string").str.strip().replace({"":pd.NA,"nan":pd.NA,"None":pd.NA})
     df["Precio_Unitario"]=pd.to_numeric(df["Precio_Unitario"].astype("string").str.replace("$","",regex=False).str.replace(",","",regex=False),errors="coerce")
-    parsed=pd.to_datetime(df["Fecha"],errors="coerce",format="mixed",dayfirst=True)
+    fechas = df["Fecha"].astype("string").str.strip()
+    parsed = pd.to_datetime(fechas, format="%Y-%m-%d", errors="coerce")
+    parsed = parsed.fillna(pd.to_datetime(fechas, format="%d/%m/%Y", errors="coerce"))
     df["Fecha"]=parsed.dt.strftime("%Y-%m-%d"); df.loc[parsed.isna(),"Fecha"]=pd.NA
     cat=df["Producto"].map(PRODUCT_CATEGORY); mask=df["Categoria"].isna() & cat.notna()
     df.loc[mask,"Categoria"]=cat[mask]
