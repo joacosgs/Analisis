@@ -1,6 +1,6 @@
 ﻿Variable,Tipo_original,Tipo_final,Nulos_iniciales,Nulos_finales,Unicos_iniciales,Unicos_finales,Tratamiento
 ID_Transaccion,string,string,0,0,2000,2000,Deduplicación por clave primaria
-Fecha,str,str,0,0,469,361,Parsing mixto a formato ISO
+Fecha,str,str,0,0,469,363,Parsing mixto a formato ISO
 ID_Cliente,str,str,0,0,661,661,Normalización de espacios si corresponde; sin imputación
 Categoria,str,str,80,0,5,5,Imputación basada en Producto
 Producto,str,str,0,0,25,25,Normalización de espacios si corresponde; sin imputación
