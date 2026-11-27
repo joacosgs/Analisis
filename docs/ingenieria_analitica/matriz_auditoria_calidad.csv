@@ -1,0 +1,13 @@
+﻿Variable,Tipo_original,Tipo_final,Nulos_iniciales,Nulos_finales,Unicos_iniciales,Unicos_finales,Tratamiento
+ID_Transaccion,string,string,0,0,2000,2000,Deduplicación por clave primaria
+Fecha,object,object,0,0,469,363,Parsing mixto a formato ISO
+ID_Cliente,object,string,0,0,661,661,Normalización de espacios si corresponde; sin imputación
+Categoria,object,string,80,0,5,5,Imputación basada en Producto
+Producto,object,string,0,0,25,25,Normalización de espacios si corresponde; sin imputación
+Precio_Unitario,object,Float64,0,0,1928,1924,Remover símbolo monetario y convertir a numérico
+Cantidad,int64,int64,0,0,6,6,Normalización de espacios si corresponde; sin imputación
+Descuento_Pct,float64,float64,100,0,5,5,Imputación 0 solo con respaldo de fórmula
+Monto_Total_USD,float64,float64,0,0,1956,1956,Normalización de espacios si corresponde; sin imputación
+Metodo_Pago,object,string,0,0,4,4,Normalización de espacios si corresponde; sin imputación
+Canal_Venta,object,string,0,0,3,3,Normalización de espacios si corresponde; sin imputación
+Estado_Pedido,object,string,0,0,4,4,Normalización de espacios si corresponde; sin imputación
